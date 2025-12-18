@@ -1,18 +1,18 @@
 import React from "react";
-import { useTeachersList } from "../service/query/useTeachersList";
+// import { useTeachersList } from "../service/query/useTeachersList";
 import type { ColumnDef } from "@tanstack/react-table";
 import { TeacherTable } from "../components/table";
 import { Spinner } from "@/components/ui/spinner";
 
 import { Button } from "@/components/ui/button";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
-import { MoreHorizontal } from "lucide-react";
+// import {
+//   DropdownMenu,
+//   DropdownMenuContent,
+//   DropdownMenuItem,
+//   DropdownMenuSeparator,
+//   DropdownMenuTrigger,
+// } from "@/components/ui/dropdown-menu";
+// import { MoreHorizontal } from "lucide-react";
 import { useToggle } from "@/hooks/useToggle";
 
 import {
@@ -22,7 +22,7 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
-import { TeacherForm } from "../components/teacher-form";
+// import { TeacherForm } from "../components/teacher-form";
 import { Link } from "react-router-dom";
 import { useGroupsList } from "../service/query/useGroupsList";
 import { GroupForm } from "../components/group-form";
@@ -104,12 +104,12 @@ export const Groups = () => {
       accessorKey: "isActive",
       header: "Status",
     },
-    {
-      header: "Action",
-      cell: ({ row }) => {
-        return <Button>Edit</Button>;
-      },
-    },
+    // {
+    //   header: "Action",
+    //   cell: ({ row }) => {
+    //     return <Button>Edit</Button>;
+    //   },
+    // },
   ];
 
   const groups: Groups[] = React.useMemo(() => {

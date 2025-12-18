@@ -19,11 +19,11 @@ import {
   AlertCircle, 
   Loader2, 
   User, 
-  Mail, 
+  // Mail, 
   Calendar, 
   Shield,
   Edit3,
-  Save,
+  // Save,
   X,
   Camera
 } from "lucide-react";
